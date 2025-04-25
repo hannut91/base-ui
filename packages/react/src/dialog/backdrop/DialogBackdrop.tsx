@@ -57,12 +57,6 @@ const DialogBackdrop = React.forwardRef(function DialogBackdrop(
     customStyleHookMapping,
   });
 
-  // no need to render nested backdrops
-  const shouldRender = !nested;
-  if (!shouldRender) {
-    return null;
-  }
-
   return renderElement();
 });
 
